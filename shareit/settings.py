@@ -79,6 +79,10 @@ WSGI_APPLICATION = 'shareit.wsgi.application'
 
 SOCIAL_AUTH_GITHUB_KEY = '86590bc7cf8f5442c456'
 SOCIAL_AUTH_GITHUB_SECRET = 'ff7f6f8515745be98fe446f30ee6cf1a2c5e6f22'
+SOCIAL_AUTH_TWITTER_KEY = '2ZDRXEqJj5mQFJdZSSWqiZ7sy'
+SOCIAL_AUTH_TWITTER_SECRET = 'jHz2RQ34BFiCfgK9r5zMq8cjTz3xliOm0KeOpF5NQsi2NA1b4f'
+SOCIAL_AUTH_FACEBOOK_KEY = '313263915835445'
+SOCIAL_AUTH_FACEBOOK_SECRET = '5e940e467b3e1becd3295c27f2d15294'
 
 # Database
 # https://docs.djangoproject.com/en/2.0/ref/settings/#databases
@@ -94,7 +98,7 @@ AUTHENTICATION_BACKENDS = (
     'social_core.backends.github.GithubOAuth2',
     'social_core.backends.twitter.TwitterOAuth',
     'social_core.backends.facebook.FacebookOAuth2',
-
+    'social_core.backends.google.GooglePlusAuth',
     'django.contrib.auth.backends.ModelBackend',
 )
 
